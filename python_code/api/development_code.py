@@ -15,13 +15,13 @@ def main():
                                                     )
     agent_dict: dict[str, AgentProtocol] = {
         "details_agent": DetailsAgent(),
-        "order_taking_agent": OrderTakingAgent(recommendation_agent),
-        "recommendation_agent": recommendation_agent
-    }
+         "order_taking_agent": OrderTakingAgent(recommendation_agent),
+         "recommendation_agent": recommendation_agent
+     }
     
     messages = []
     while True:
-        # Display the chat history
+        #Display the chat history
         os.system('cls' if os.name == 'nt' else 'clear')
         
         print("\n\nPrint Messages ...............")
@@ -38,19 +38,17 @@ def main():
             messages.append(guard_agent_response)
             continue
         
-        # Get ClassificationAgent's response
+        # Get ClassificationAgent's response if input is valid
         classification_agent_response = classification_agent.get_response(messages)
         chosen_agent=classification_agent_response["memory"]["classification_decision"]
-        print("Chosen Agent: ", chosen_agent)
+        #print("Chosen Agent: ", chosen_agent)
 
-        # Get the chosen agent's response
+        #Get the chosen agent's response
         agent = agent_dict[chosen_agent]
         response = agent.get_response(messages)
+        #print('Agent output : ',response)
         
         messages.append(response)
-
-        
-        
 
 if __name__ == "__main__":
     main()

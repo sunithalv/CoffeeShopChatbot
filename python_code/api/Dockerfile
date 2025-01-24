@@ -1,4 +1,4 @@
-FROM python:3.8.6-slim
+FROM python:3.10.16-slim-bullseye
 
 RUN mkdir /app
 
@@ -14,7 +14,7 @@ COPY agent_controller.py agent_controller.py
 COPY main.py main.py
 
 # Testing Dockerfile # TO REMOVE AFTER TESTING
-# COPY test_input.json test_input.json
+#COPY test_input.json test_input.json
 
 
 ENTRYPOINT [ "python", "main.py"]

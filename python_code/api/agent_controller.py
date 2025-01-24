@@ -5,6 +5,7 @@ from agents import (GuardAgent,
                     RecommendationAgent,
                     AgentProtocol
                     )
+from typing import Dict
 
 class AgentController():
     def __init__(self):
@@ -14,7 +15,7 @@ class AgentController():
                                                         'recommendation_objects/popularity_recommendation.csv'
                                                         )
         
-        self.agent_dict: dict[str, AgentProtocol] = {
+        self.agent_dict: Dict[str, AgentProtocol] = {
             "details_agent": DetailsAgent(),
             "order_taking_agent": OrderTakingAgent(self.recommendation_agent),
             "recommendation_agent": self.recommendation_agent
