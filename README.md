@@ -46,9 +46,9 @@ Powered by a Retrieval-Augmented Generation (RAG) system, the Details Agent answ
 # Directory Structure
 ```bash
 ├── coffee_shop_customer_service_chatbot
-│   ├── coffee_shop_app_folder # Contains React Native app code   
+│   ├── coffee_shop_app  # Contains React Native app code   
 │   ├── python_code
-│       ├── API/               # Chatbot API for agent-based system
+│       ├── api/               # Chatbot API for agent-based system
 │       ├── dataset/           # Dataset for training recommendation engine    
 │       ├── products/          # Product data (names, prices, descriptions, images)   
 │       ├── build_vector_database.ipynb             # Builds vector database for RAG model   
