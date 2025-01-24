@@ -8,7 +8,7 @@ This project builds an AI-powered Agent based chatbot to enhance customer experi
 ## React Native Coffee Shop App
 ![Screenshot_20250123-193016_Expo Go](https://github.com/user-attachments/assets/efc22085-6315-4ea2-b06c-e1ccd8c342ce)
      ![Screenshot_20250123-193452_Expo Go](https://github.com/user-attachments/assets/2135afca-8387-4021-86e1-1c0deb378208)
-     ![Screenshot_20250123-193512_Expo Go](https://github.com/user-attachments/assets/1876e1dc-d974-47a2-b09f-9ffcf649bf9c)     ![Screenshot_20250123-193518_Expo Go](https://github.com/user-attachments/assets/0cc8b3ae-2b86-44ae-8b49-905e517138c4)
+     ![Screenshot_20250123-193512_Expo Go](https://github.com/user-attachments/assets/1876e1dc-d974-47a2-b09f-9ffcf649bf9c)    
 
 The React Native Coffee Shop App serves as the front-end interface for customers to interact with the AI-powered chatbot and explore the menu. The app integrates the chatbot for real-time customer service, enabling users to place orders, receive personalized product recommendations, and get detailed information about menu items.There is also provision for user to place order manually from the home page.
 
